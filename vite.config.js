@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/day-37/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,5 +14,4 @@ export default defineConfig({
       "@pages": "/src/pages",
     },
   },
-  base: "/day-37/",
 });
