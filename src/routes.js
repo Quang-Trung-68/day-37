@@ -1,14 +1,20 @@
 import { PATHS } from "@/configs/paths.js";
 import { LAYOUTS } from "@/configs/layouts.js";
-import NotFound from "./pages/NotFound";
-import EditAvatar from "./pages/EditAvatar";
-import UseRef from "./pages/UseRef";
-import ReactMemo from "./pages/ReactMemo";
+import NotFound from "@/pages/NotFound";
+import EditAvatar from "@/pages/EditAvatar";
+import UseRef from "@/pages/UseRef";
+import ReactMemo from "@/pages/ReactMemo";
 
 export const ROUTES = [
   {
     layout: LAYOUTS.DEFAULT,
     children: [
+      {
+        path: PATHS.HOME,
+        title: "Edit avatar",
+        element: EditAvatar,
+        isShowInNav: true,
+      },
       {
         path: PATHS.EDIT_AVATAR,
         title: "Edit avatar",
