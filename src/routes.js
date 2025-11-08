@@ -16,12 +16,6 @@ export const ROUTES = [
         isShowInNav: true,
       },
       {
-        path: PATHS.EDIT_AVATAR,
-        title: "Edit avatar",
-        element: EditAvatar,
-        isShowInNav: true,
-      },
-      {
         path: PATHS.USE_REF,
         title: "Use Ref",
         element: UseRef,
